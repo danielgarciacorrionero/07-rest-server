@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 //Import usuario
 app.use(require('./routes/usuario'));
 
-mongoose.connect(process.env.URLDB, {
+mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
